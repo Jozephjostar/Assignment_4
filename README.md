@@ -36,7 +36,7 @@ The project follows a strict multi-layer architecture:
 
 ---
 
-## 🧩 SOLID Principles Application
+## SOLID Principles Application
 
 ### 1. Single Responsibility Principle (SRP)
 - Each class has one responsibility:
