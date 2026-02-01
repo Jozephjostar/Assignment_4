@@ -10,16 +10,16 @@ public abstract class MediaContentBase {
         this.name = name;
     }
 
-    // abstract methods
+
     public abstract int getDuration();
     public abstract String getType();
 
-    // concrete method
+
     public String basicInfo() {
         return id + " | " + name + " | " + getType();
     }
 
-    // encapsulation
+
     public int getId() { return id; }
     public String getName() { return name; }
 

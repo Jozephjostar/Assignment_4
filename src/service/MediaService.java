@@ -1,13 +1,10 @@
 package service;
 
-import model.MediaContentBase;
 import repository.interfaces.CrudRepository;
-import exception.InvalidInputException;
-
+import model.MediaContentBase;
 import java.util.List;
 
 public class MediaService {
-
     private final CrudRepository<MediaContentBase> repository;
 
     public MediaService(CrudRepository<MediaContentBase> repository) {
@@ -15,9 +12,6 @@ public class MediaService {
     }
 
     public void add(MediaContentBase media) {
-        if (media.getDuration() <= 0) {
-            throw new InvalidInputException("Duration must be positive");
-        }
         repository.create(media);
     }
 
